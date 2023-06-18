@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Home - Senimentari Book Store</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav>
+      <div>
+        <img id="logoNav" src="images/logo.png" alt="logo toko buku senimentari" />
+      </div>
+      <div>
+        <ul id="navList">
+          <li class="navLink">
+            <a href="#">Beranda</a>
+            <span class="navLinkUnderline active"></span>
+          </li>
+          <li class="navLink"><a href="#">Tentang Kami</a><span class="navLinkUnderline"></span></li>
+          <li class="navLink"><a href="#">Koleksi Kami</a><span class="navLinkUnderline"></span></li>
+          <li class="navLink"><a href="#">Terbit Naskah</a><span class="navLinkUnderline"></span></li>
+        </ul>
+      </div>
+      <div id="btn-nav">
+        <button>Masuk</button>
+        <button>Daftar</button>
+      </div>
+    </nav>
+    <!--Jargon Container-->
+    <header>
+      <div class="jargon-wrapper">
+        <h1>Kedai Buku <span style="color: red">Gajah</span> <br />Kedai Buku Serba Ada</h1>
+        <p>Kami menyediakan buku berbagai genre dari berbagai zaman!</p>
+      </div>
+      <div class="imgJargonWrapper">
+        <img src="images/MentariReading.png" alt="ilustrasi orang lagi baca buku" />
+      </div>
+    </header>
+    <!--Best Selling Products-->
+    <main>
+      <div class="genreWrapper">
+        <table cellpadding="10" cellspasing="2">
+          <tr>
+            <td class="genreMenu">
+              <img class="genreImg" src="images/baru.png" alt="fiksi" width="80" />
+              <p style="font-family: fantasy"><a class="genreLink" href="#">Buku Baru</a></p>
+            </td>
+            <td class="genreMenu">
+              <img class="genreImg" src="images/science.png" alt="sains" width="80" />
+              <p style="font-family: fantasy"><a class="genreLink" href="#">Sains & Teknologi</a></p>
+            </td>
+            <td class="genreMenu">
+              <img class="genreImg" src="images/social.png" alt="social" width="80" />
+              <p style="font-family: fantasy"><a class="genreLink" href="#">Sosial & Humaniora</a></p>
+            </td>
+            <td class="genreMenu">
+              <img class="genreImg" src="images/fiksi.png" alt="fiksi" width="80" />
+              <p style="font-family: fantasy"><a class="genreLink" href="#">Fiksi</a></p>
+            </td>
+            <td class="genreMenu">
+              <img class="genreImg" src="images/international.png" alt="fiksi" width="80" />
+              <p style="font-family: fantasy"><a class="genreLink" href="#">International</a></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="akademikPilihan">
+        <div class="akademik-title-wrapper">
+          <h2>Akademik Pilihan</h2>
+          <h3 class="seeAll"><a href="#">Lihat Semua &#10095;</a><span class="seeAllUnderline"></span></h3>
+        </div>
+        <table id="akademikTable" cellspacing="10">
+          <tr>
+            <td class="akademikTd">
+              <img src="images/math.png" alt="akademik" width="300" />
+            </td>
+            <td class="akademikTd">
+              <img src="images/calculus.jpg" alt="calculus" width="100" />
+              <p>Calculus: An Intuitive and Physical Approach (Second Edition)</p>
+              <h4 class="bookPrice">Rp<b>180.000,00</b></h4>
+              <button><a href="#">Detail</a></button>
+            </td>
+            <td class="akademikTd">
+              <img src="images/fisika.jpg" alt="fisika" width="130" />
+              <p>Fundamentals of Physics, Extended</p>
+              <h4 class="bookPrice">Rp<b>150.000,00</b></h4>
+              <button><a href="#">Detail</a></button>
+            </td>
+            <td class="akademikTd">
+              <img src="images/biologi.jpg" alt="biologi" width="150" />
+              <p>Campbell Biology</p>
+              <h4 class="bookPrice">Rp<b>200.000,00</b></h4>
+              <button><a href="#">Detail</a></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="novelPilihan">
+        <div class="novel-title-wrapper">
+          <h2>Fiksi Pilihan</h2>
+          <h3 class="seeAll"><a href="#">Lihat Semua &#10095;</a><span class="seeAllUnderline"></span></h3>
+        </div>
+        <table id="novelTable" cellspacing="10">
+          <tr>
+            <td class="novelTd">
+              <img src="images/dream.png" alt="dream" width="300" />
+            </td>
+            <td class="novelTd">
+              <img src="images/manyar.jpg" alt="Burung-burung Manyar" width="130" />
+              <p style="font-size: 12px">Burung-burung Manyar (1981)</p>
+              <h4 class="bookPrice">Rp<b>90.000,00</b></h4>
+              <button><a href="#">Detail</a></button>
+            </td>
+            <td class="novelTd">
+              <img src="images/pushkin.jpg" alt="sagaras" width="130" />
+              <p style="font-size: 12px">
+                Alexander Pushkin<br />
+                Short Stories (1831)
+              </p>
+              <h4 class="bookPrice">Rp<b>89.000,00</b></h4>
+              <button><a href="#">Detail</a></button>
+            </td>
+            <td class="novelTd">
+              <img src="images/duniashopie.jpg" alt="duniashopie" width="130" />
+              <p style="font-size: 12px">Dunia Shopie (1991)</p>
+              <h4 class="bookPrice">Rp<b>130.000,00</b></h4>
+              <button><a href="#">Detail</a></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p class="incarBuku">Gak ada buku incaranmu? Yuk, <a href="#">lihat koleksi kami</a> atau <a href="#">tanya langsung</a> juga boleh</p>
+    </main>
+    <footer>
+      <div id="footerWrapper">
+        <div class="jargonFooter">
+          <h2>Kedai Buku <span style="color: red">Gajah</span> <br />Kedai Buku Serba Ada</h2>
+          <a href="#">Beranda</a>
+          <a href="#">Tentang Kami</a>
+          <a href="#">Koleksi</a>
+          <a href="#">Terbit Naskah</a>
+        </div>
+        <div class="contactUs">
+          <h3>Hubungi Kami</h3>
+          <ul type="none">
+            <li>mentaribookstore@mail.com</li>
+            <li>(021)-1234-XXXX</li>
+            <li>Jl. Hanjawar No. 52, Cianjur, Jawa Barat</li>
+          </ul>
+        </div>
+        <div class="other">
+          <h3>Lainnya</h3>
+          <ul type="none">
+            <li>Bantuan</li>
+            <li>Pembayaran</li>
+            <li>Kebijakan dan Privasi</li>
+          </ul>
+        </div>
+        <div class="downloadApp">
+          <h3>Unduh Aplikasi Seluler Kami</h3>
+          <a href="#"><img src="images/googlePlay.png" alt="googlePlay" width="100" /></a>
+          <a href="#"><img src="images/appStore.png" alt="appStore" width="100" /></a>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2023 senimentari Group</p>
+    </footer>
+  </body>
+</html>

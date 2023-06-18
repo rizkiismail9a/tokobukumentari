@@ -1,0 +1,213 @@
+/* Universal */
+body {
+  margin: 0;
+  padding: 0;
+}
+span.active {
+  display: block;
+  margin-top: 5px;
+  background-color: red;
+  width: 100%;
+  height: 4px;
+}
+/* Navbar */
+nav {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+#logoNav {
+  width: auto;
+  height: 70px;
+}
+#navList {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.navLink {
+  margin-right: 20px;
+  padding: 10px;
+}
+.navLink a {
+  color: #000;
+  text-decoration: none;
+}
+.navLinkUnderline {
+  display: block;
+  margin-top: 5px;
+  background-color: red;
+  width: 0;
+  height: 4px;
+  transition: all 0.3s;
+}
+.navLink:hover .navLinkUnderline {
+  width: 100%;
+}
+#btn-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#btn-nav button {
+  width: 70px;
+  margin-left: 10px;
+  height: 30px;
+  background-color: rgb(230, 230, 230);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+#btn-nav button:hover {
+  background-color: red;
+  color: white;
+  transition: background-color 0.8s;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.jargon-wrapper {
+  text-align: right;
+  padding: 100px;
+}
+.jargon-wrapper h1 {
+  font-size: 50px;
+}
+.jargon-wrapper p {
+  font-size: 1.2rem;
+}
+.imgJargonWrapper img {
+  width: 500px;
+  height: auto;
+}
+/* main */
+/* BestSelling */
+.genreWrapper {
+  padding: 20px auto;
+  margin: 20px;
+}
+.genreWrapper table {
+  width: 100%;
+  text-align: center;
+}
+.genreMenu:hover {
+  border-radius: 20px;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.26);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.genreMenu:hover .genreImg {
+  width: 100px;
+  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.26);
+  border-radius: 25px;
+}
+.genreLink {
+  text-decoration: none;
+  color: brown;
+}
+/* Akademik Pilihan & Novel Pilihan*/
+.akademikPilihan {
+  margin-top: 50px;
+}
+.akademik-title-wrapper,
+.novel-title-wrapper {
+  margin: 0 100px;
+}
+.akademik-title-wrapper a,
+.novel-title-wrapper a {
+  text-decoration: none;
+}
+.seeAll {
+  display: inline-block;
+}
+.seeAllUnderline {
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: blue;
+  transition: all 0.5s;
+}
+.seeAll:hover .seeAllUnderline {
+  width: 100%;
+}
+#akademikTable,
+#novelTable {
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0 50px;
+  text-align: center;
+}
+.akademikTd,
+.novelTd {
+  box-shadow: 3px 3px 10px rgb(230, 230, 230);
+  padding: 20px;
+  width: 25%;
+  border-radius: 10px;
+}
+.akademikTd p {
+  font-size: 12px;
+}
+.akademikTd button,
+.novelTd button {
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+}
+.akademikTd button a,
+.novelTd button a {
+  text-decoration: none;
+  color: white;
+}
+.bookPrice {
+  font-weight: normal;
+}
+/* Incar Buku */
+.incarBuku {
+  text-align: center;
+}
+.incarBuku a {
+  text-decoration: none;
+  color: blue;
+}
+.incarBuku a:hover {
+  text-decoration: underline;
+  transition: all 0.8s;
+}
+/* Footer */
+footer {
+  background-color: #eee;
+  height: fit-content;
+  margin-top: 30px;
+}
+#footerWrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.jargonFooter a {
+  text-decoration: none;
+  color: grey;
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+.contactUs ul li,
+.other ul li {
+  margin-left: -40px;
+  line-height: 2;
+  font-size: 0.8rem;
+}
+.copyright {
+  margin: 0;
+  line-height: 2;
+  padding: 15px;
+  text-align: center;
+}
