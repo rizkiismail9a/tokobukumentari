@@ -93,17 +93,21 @@ header {
   width: 100%;
   text-align: center;
 }
-.genreMenu:hover {
+.genreMenu,
+.genreImg {
+  background: linear-gradient(white, rgb(255, 236, 236), rgb(253, 122, 122));
   border-radius: 20px;
   border: none;
+}
+.genreMenu:hover {
   box-sizing: border-box;
-  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.26);
+  box-shadow: 0 4px 10px rgba(82, 82, 82, 0.829);
   transition: all 0.5s;
   cursor: pointer;
 }
 .genreMenu:hover .genreImg {
   width: 100px;
-  box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.26);
+  box-shadow: 4px 4px 10px rgba(179, 179, 179, 0.644);
   border-radius: 25px;
 }
 .genreLink {
