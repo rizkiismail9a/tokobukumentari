@@ -47,6 +47,13 @@ nav {
 .navLink:hover .navLinkUnderline {
   width: 100%;
 }
+.search {
+  background-color: aquamarine;
+}
+.search input {
+  border: none;
+  position: relative;
+}
 .joinUs {
   position: relative;
 }
@@ -54,7 +61,6 @@ nav {
   background-color: white;
   box-shadow: 5px 5px 10px rgba(114, 114, 114, 0.466);
   border-radius: 15px;
-  top: 50px;
   width: 150px;
   display: none;
   position: absolute;
