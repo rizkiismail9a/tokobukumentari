@@ -47,6 +47,34 @@ nav {
 .navLink:hover .navLinkUnderline {
   width: 100%;
 }
+.joinUs {
+  position: relative;
+}
+.dropdown {
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(114, 114, 114, 0.466);
+  border-radius: 15px;
+  top: 50px;
+  width: 150px;
+  display: none;
+  position: absolute;
+  padding: 10px;
+}
+.dropdown li {
+  margin-right: 40px;
+  line-height: 40px;
+  width: 100%;
+}
+.dropdown li a {
+  display: inline-block;
+  width: 100%;
+}
+.dropdown li:hover {
+  background-color: #eee;
+}
+.joinUs:hover .dropdown {
+  display: block;
+}
 #btn-nav {
   display: flex;
   justify-content: space-between;
