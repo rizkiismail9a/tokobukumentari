@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Senimentari Book Store</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -19,7 +20,7 @@
           </li>
           <li class="navLink"><a href="#">Tentang Kami</a><span class="navLinkUnderline"></span></li>
           <li class="navLink"><a href="#">Koleksi Kami</a><span class="navLinkUnderline"></span></li>
-          <li class="navLink"><a href="#">Terbit Naskah</a><span class="navLinkUnderline"></span></li>
+          <li class="navLink"><a href="#">Jadi Bagian Kami</a><span class="navLinkUnderline"></span></li>
         </ul>
       </div>
       <div id="btn-nav">
@@ -65,6 +66,25 @@
           </tr>
         </table>
       </div>
+      <div id="popup">
+        <div class="popup-content">
+          <a href="" class="close-popup">&Cross;</a>
+          <div class="card">
+            <img src="images/biologi.jpg" alt="" width="300" />
+            <div class="card-text">
+              <h3>Campbell Biology</h3>
+              <p style="text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, numquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, culpa.</p>
+              <p><b>Penerbit: </b>Pearson; 12th edition (January 17, 2020)</p>
+              <p><b>Bahasa: </b>Inggris</p>
+              <p><b>ISBN-10: </b>0135188741</p>
+              <p><b>Berat: </b>3,5kg</p>
+              <p><b>Dimensi:</b> 9 x 1.4 x 10.8 inci</p>
+              <p style="font-size: 1.5rem">Rp<b>200.000,00</b></p>
+              <button class="buynow"><a href="#">Beli Sekarang!</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="akademikPilihan">
         <div class="akademik-title-wrapper">
           <h2>Akademik Pilihan</h2>
@@ -79,19 +99,19 @@
               <img src="images/calculus.jpg" alt="calculus" width="100" />
               <p>Calculus: An Intuitive and Physical Approach (Second Edition)</p>
               <h4 class="bookPrice">Rp<b>180.000,00</b></h4>
-              <button><a href="#">Detail</a></button>
+              <button><a href="#popup">Detail</a></button>
             </td>
             <td class="akademikTd">
               <img src="images/fisika.jpg" alt="fisika" width="130" />
               <p>Fundamentals of Physics, Extended</p>
               <h4 class="bookPrice">Rp<b>150.000,00</b></h4>
-              <button><a href="#">Detail</a></button>
+              <button><a href="#popup">Detail</a></button>
             </td>
             <td class="akademikTd">
               <img src="images/biologi.jpg" alt="biologi" width="150" />
               <p>Campbell Biology</p>
               <h4 class="bookPrice">Rp<b>200.000,00</b></h4>
-              <button><a href="#">Detail</a></button>
+              <button><a href="#popup">Detail</a></button>
             </td>
           </tr>
         </table>
@@ -110,7 +130,7 @@
               <img src="images/manyar.jpg" alt="Burung-burung Manyar" width="130" />
               <p style="font-size: 12px">Burung-burung Manyar (1981)</p>
               <h4 class="bookPrice">Rp<b>90.000,00</b></h4>
-              <button><a href="#">Detail</a></button>
+              <button><a href="#popup">Detail</a></button>
             </td>
             <td class="novelTd">
               <img src="images/pushkin.jpg" alt="sagaras" width="130" />
@@ -119,13 +139,13 @@
                 Short Stories (1831)
               </p>
               <h4 class="bookPrice">Rp<b>89.000,00</b></h4>
-              <button><a href="#">Detail</a></button>
+              <button><a href="#popup">Detail</a></button>
             </td>
             <td class="novelTd">
               <img src="images/duniashopie.jpg" alt="duniashopie" width="130" />
               <p style="font-size: 12px">Dunia Shopie (1991)</p>
               <h4 class="bookPrice">Rp<b>130.000,00</b></h4>
-              <button><a href="#">Detail</a></button>
+              <button><a href="#popup">Detail</a></button>
             </td>
           </tr>
         </table>
@@ -135,11 +155,11 @@
     <footer>
       <div id="footerWrapper">
         <div class="jargonFooter">
-          <h2>Kedai Buku <span style="color: red">Gajah</span> <br />Kedai Buku Serba Ada</h2>
-          <a href="#">Beranda</a>
-          <a href="#">Tentang Kami</a>
-          <a href="#">Koleksi</a>
-          <a href="#">Terbit Naskah</a>
+          <h2>Kedai Buku <span style="color: #ff3a5c">Gajah</span> <br />Kedai Buku Serba Ada</h2>
+          <a href="#" class="otherLink">Beranda</a>
+          <a href="#" class="otherLink">Tentang Kami</a>
+          <a href="#" class="otherLink">Koleksi</a>
+          <a href="#" class="otherLink">Join Us</a>
         </div>
         <div class="contactUs">
           <h3>Hubungi Kami</h3>
@@ -152,9 +172,9 @@
         <div class="other">
           <h3>Lainnya</h3>
           <ul type="none">
-            <li>Bantuan</li>
-            <li>Pembayaran</li>
-            <li>Kebijakan dan Privasi</li>
+            <li class="otherLink">Bantuan</li>
+            <li class="otherLink">Pembayaran</li>
+            <li class="otherLink">Kebijakan dan Privasi</li>
           </ul>
         </div>
         <div class="downloadApp">
