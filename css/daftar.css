@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+}
+nav {
+  text-align: center;
+  padding: 10px;
+}
+.main-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.jargon-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 50%;
+}
+.jargon-wrapper img {
+  margin: auto;
+}
+.jargon-text {
+  line-height: 2;
+}
+.form-wrapper {
+  width: 50%;
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(114, 114, 114, 0.466);
+  padding: 30px;
+  border-radius: 20px;
+}
+.card-wrapper h2 {
+  text-align: center;
+}
+.card-wrapper p {
+  line-height: 2;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.google {
+  border: 1px solid #c6c6c6;
+  border-radius: 10px;
+  height: 30px;
+  text-align: center;
+  padding: 8px;
+  margin: 30px 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  font-size: 0.8rem;
+  padding-left: 10px;
+}
+form input {
+  height: 40px;
+  border: 1px solid #c6c6c6;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+input:focus {
+  outline: 3px solid #ff3a5c;
+}
+form button {
+  background-color: #ff3a5c;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 50px;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+}
+/* Footer */
+footer {
+  background-color: #eee;
+  height: fit-content;
+  margin-top: 30px;
+}
+#footerWrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.jargonFooter a {
+  text-decoration: none;
+  color: grey;
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+.contactUs ul li,
+.other ul li {
+  margin-left: -40px;
+  line-height: 2;
+  font-size: 0.8rem;
+}
+.copyright {
+  margin: 0;
+  line-height: 2;
+  padding: 15px;
+  text-align: center;
+}
+.otherLink:hover {
+  cursor: pointer;
+  color: #ff3a5c;
+}
