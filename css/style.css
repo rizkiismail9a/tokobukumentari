@@ -100,6 +100,9 @@ nav {
   color: white;
   transition: background-color 0.8s;
 }
+#cart {
+  margin-left: 20px;
+}
 /* Header */
 header {
   display: flex;
