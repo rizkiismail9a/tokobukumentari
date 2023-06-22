@@ -133,17 +133,17 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.jargon-wrapper {
+.banner-wrapper {
   text-align: right;
   padding: 100px;
 }
-.jargon-wrapper h1 {
+.banner-wrapper h1 {
   font-size: 50px;
 }
-.jargon-wrapper p {
+.banner-wrapper p {
   font-size: 1.2rem;
 }
-.imgJargonWrapper img {
+.imgbannerWrapper img {
   width: 500px;
   height: auto;
 }
@@ -254,6 +254,11 @@ header {
 .bookPrice {
   font-weight: normal;
 }
+.discount {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 0.7rem;
+}
 /* Incar Buku */
 .incarBuku {
   text-align: center;
@@ -278,7 +283,7 @@ footer {
   display: flex;
   justify-content: space-around;
 }
-.jargonFooter a {
+.bannerFooter a {
   text-decoration: none;
   color: grey;
   margin-right: 10px;
