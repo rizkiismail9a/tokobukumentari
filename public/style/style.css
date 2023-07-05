@@ -1,0 +1,277 @@
+:root {
+  --main-color: #ff3a5c;
+  --shadow: 2px 3px 8px rgb(212, 212, 212);
+}
+.font-pink {
+  color: var(--main-color);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+body {
+  background-color: #eee;
+}
+.width-max {
+  max-width: 1080px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input:focus {
+  outline: 2px solid var(--main-color);
+}
+i {
+  color: var(--main-color);
+}
+/* navbar */
+.nav-wrapper {
+  width: 100%;
+  background-color: #eee;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 998;
+}
+.navbar {
+  width: 100%;
+  top: 0;
+  left: 44px;
+  right: 44px;
+  margin: 0 auto;
+  z-index: 999;
+}
+nav {
+  width: 100%;
+}
+nav li a {
+  color: black;
+}
+.navbar__logo {
+  width: 25%;
+  object-fit: contain;
+}
+.navbar__btn {
+  background-color: lightgray;
+  color: white;
+  width: 86px;
+}
+.navbar__btn:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.navbar__list {
+  width: 75%;
+}
+.navbar__list ul {
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+.navbar__form {
+  width: 50%;
+  position: relative;
+}
+.dropdown-menu {
+  top: 36px;
+}
+#search-bar {
+  width: 100%;
+  height: 40px;
+  padding: 16px;
+  border: 1px solid lightblue;
+}
+.fa-magnifying-glass {
+  position: absolute;
+  font-size: 1.3rem;
+  right: 12px;
+  top: 8px;
+}
+i.hamburger-btn {
+  display: none;
+}
+/* navbar end */
+/* carousel */
+.carousel {
+  margin-top: 100px;
+  height: 60vh;
+}
+.banner {
+  gap: 30px;
+}
+.banner__jargon {
+  width: 50%;
+  align-self: center;
+  text-align: right;
+}
+.banner__img {
+  height: 400px;
+  object-fit: contain;
+}
+.carousel-prev {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+/* carousel end */
+/* Shortcut */
+.shortcut-wrapper {
+  margin: 0 auto;
+  gap: 10px;
+}
+.shortcut {
+  margin: auto;
+  background: linear-gradient(white, rgb(255, 222, 222), var(--main-color));
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+.shortcut a {
+  color: white;
+}
+.shortcut a:hover {
+  cursor: pointer;
+}
+.shortcut__img {
+  height: 100px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+.shortcut__text {
+  line-height: 2;
+}
+/* Shortcut end */
+/* layar tablet */
+@media only screen and (max-width: 768px) {
+  /* navbar */
+  nav {
+    flex-direction: column;
+  }
+  .navbar,
+  .fa-magnifying-glass,
+  .dropdown-menu {
+    font-size: 0.8rem;
+  }
+  .navbar__logo {
+    width: 40%;
+    margin: auto;
+    padding-right: 20px;
+  }
+  .navbar__list {
+    width: 90%;
+  }
+  .navbar__list ul {
+    padding: 0;
+    margin-top: 12px;
+  }
+  .navbar__list li {
+    margin: 0 12px;
+  }
+  .dropdown-menu {
+    top: 36px !important;
+  }
+  .navbar__btn {
+    width: 58px;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  #search-bar {
+    height: 30px;
+    padding: 12px;
+  }
+  /* banner */
+  .banner {
+    flex-direction: column;
+    gap: 0;
+  }
+  .banner__img,
+  .banner__jargon {
+    width: 100%;
+    text-align: center;
+  }
+  .carousel {
+    margin-top: 250px;
+    height: 50vh;
+  }
+  .banner__img {
+    height: 300px;
+    object-fit: contain;
+  }
+  .shortcut-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .shortcut {
+    width: fit-content;
+  }
+}
+
+/* layar hp */
+@media only screen and (max-width: 576px) {
+  .navbar {
+    position: unset;
+    top: 0;
+  }
+  .navbar,
+  .fa-magnifying-glass,
+  .dropdown-menu {
+    font-size: 1rem;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .navbar__logo {
+    width: 100vw;
+    background-color: #eee;
+    position: relative;
+    z-index: 999;
+  }
+  .navbar__form {
+    width: 90%;
+  }
+  .navbar__list {
+    width: 100%;
+    background-color: #eee;
+    position: relative;
+    z-index: 500;
+    top: -1000px;
+    transition: all 0.5s;
+  }
+  .hamburger-toggle {
+    top: 0;
+  }
+  .navbar__list ul {
+    flex-direction: column;
+    padding-left: 0;
+    line-height: 2;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar__btn {
+    width: 86px;
+    font-size: 1rem;
+    margin-top: 12px;
+  }
+  i.hamburger-btn {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    z-index: 999;
+    background-color: #eee;
+  }
+  /* banner */
+
+  .banner {
+    flex-direction: column;
+    gap: 0;
+  }
+  .banner__img,
+  .banner__jargon {
+    width: 100%;
+    text-align: center;
+  }
+}
