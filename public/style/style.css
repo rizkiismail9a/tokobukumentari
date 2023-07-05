@@ -1,6 +1,7 @@
 :root {
   --main-color: #ff3a5c;
   --shadow: 2px 3px 8px rgb(212, 212, 212);
+  --shadow-hover: 2px 3px 8px rgb(255, 255, 255);
 }
 .font-pink {
   color: var(--main-color);
@@ -27,6 +28,22 @@ input:focus {
 }
 i {
   color: var(--main-color);
+}
+.see-all a {
+  color: var(--main-color);
+}
+.see-all {
+  display: inline-block;
+}
+.see-all__slider {
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: var(--main-color);
+  transition: all 0.2s;
+}
+.see-all:hover .see-all__slider {
+  width: 100%;
 }
 /* navbar */
 .nav-wrapper {
@@ -128,6 +145,15 @@ i.hamburger-btn {
   padding-top: 15px;
   border-radius: 20px;
   box-shadow: var(--shadow);
+  transition: all 0.2s;
+}
+.shortcut:hover {
+  transform: scale(1.1);
+  transform-origin: bottom;
+}
+.shortcut:hover .shortcut__img {
+  height: 120px;
+  box-shadow: var(--shadow-hover);
 }
 .shortcut a {
   color: white;
@@ -144,8 +170,130 @@ i.hamburger-btn {
   line-height: 2;
 }
 /* Shortcut end */
+/* reccomendation product */
+.recc-wrapper {
+  margin: 86px auto;
+}
+.recc__card {
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.recc__card a {
+  display: block;
+  cursor: pointer;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  z-index: 999;
+}
+.recc__card-img {
+  height: 200px;
+  object-fit: contain;
+}
+.recc__card-p {
+  color: grey;
+}
+.recc__card-disc {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 0.8rem;
+}
+.recc__card-price {
+  color: var(--main-color);
+}
+/* reccomendation product end */
+/* academic */
+.acc-wrapper {
+  margin: 86px auto;
+}
+.acc__card {
+  box-shadow: var(--shadow);
+  text-align: center;
+  height: fit-content;
+}
+.acc__card a {
+  display: block;
+  cursor: pointer;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  z-index: 999;
+}
+.acc__card-img1 {
+  height: 330px;
+  object-fit: contain;
+}
+.acc__card-img {
+  height: 200px;
+  object-fit: contain;
+}
+.acc__card-p {
+  color: grey;
+}
+.acc__card-disc {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 0.8rem;
+}
+.acc__card-price {
+  color: var(--main-color);
+}
+/* end ecademic */
+/* fiction */
+.fics-wrapper {
+  margin: 86px auto;
+}
+.fics__card {
+  box-shadow: var(--shadow);
+  text-align: center;
+  height: fit-content;
+}
+.fics__card a {
+  display: block;
+  cursor: pointer;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  z-index: 999;
+}
+.fics__card-img1 {
+  height: 330px;
+  object-fit: contain;
+}
+.fics__card-img {
+  height: 200px;
+  object-fit: contain;
+}
+.fics__card-p {
+  color: grey;
+}
+.fics__card-disc {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 0.8rem;
+}
+.fics__card-price {
+  color: var(--main-color);
+}
+/* end fiction */
+/* footer */
+.footer-wrapper {
+  padding-top: 50px;
+  background-color: grey;
+  color: #eee;
+  height: fit-content;
+  position: relative;
+  bottom: 0;
+}
+footer h4 {
+  font-size: 20px;
+}
+footer li {
+  font-size: 12px;
+  margin-left: -30px;
+}
 /* layar tablet */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   /* navbar */
   nav {
     flex-direction: column;
@@ -193,7 +341,7 @@ i.hamburger-btn {
     text-align: center;
   }
   .carousel {
-    margin-top: 250px;
+    margin-top: 200px;
     height: 50vh;
   }
   .banner__img {
@@ -201,8 +349,7 @@ i.hamburger-btn {
     object-fit: contain;
   }
   .shortcut-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 200px;
   }
   .shortcut {
     width: fit-content;
@@ -211,6 +358,9 @@ i.hamburger-btn {
 
 /* layar hp */
 @media only screen and (max-width: 576px) {
+  .card {
+    margin-bottom: 20px;
+  }
   .navbar {
     position: unset;
     top: 0;
@@ -273,5 +423,11 @@ i.hamburger-btn {
   .banner__jargon {
     width: 100%;
     text-align: center;
+  }
+  .footer-wrapper {
+    text-align: center;
+  }
+  footer .col-sm-3 {
+    margin-bottom: 20px;
   }
 }
