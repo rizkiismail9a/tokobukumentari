@@ -23,9 +23,9 @@ ul {
 a {
   text-decoration: none;
 }
-input:focus {
+/* input:focus {
   outline: 2px solid var(--main-color);
-}
+} */
 i {
   color: var(--main-color);
 }
@@ -48,11 +48,11 @@ i {
 /* navbar */
 .nav-wrapper {
   width: 100%;
+  position: sticky;
   background-color: #eee;
   height: 100px;
-  position: fixed;
   top: 0;
-  z-index: 998;
+  z-index: 500;
 }
 .navbar {
   width: 100%;
@@ -60,7 +60,7 @@ i {
   left: 44px;
   right: 44px;
   margin: 0 auto;
-  z-index: 999;
+  z-index: 900;
 }
 nav {
   width: 100%;
@@ -90,30 +90,19 @@ nav li a {
 }
 .navbar__form {
   width: 50%;
-  position: relative;
+  /* position: relative; */
 }
 .dropdown-menu {
   top: 36px;
 }
-#search-bar {
-  width: 100%;
-  height: 40px;
-  padding: 16px;
-  border: 1px solid lightblue;
-}
-.fa-magnifying-glass {
-  position: absolute;
-  font-size: 1.3rem;
-  right: 12px;
-  top: 8px;
-}
+
 i.hamburger-btn {
   display: none;
 }
 /* navbar end */
 /* carousel */
 .carousel {
-  margin-top: 100px;
+  margin-top: 30px;
   height: 60vh;
 }
 .banner {
@@ -177,6 +166,7 @@ i.hamburger-btn {
 .recc__card {
   box-shadow: var(--shadow);
   text-align: center;
+  height: fit-content;
 }
 .recc__card a {
   display: block;
@@ -184,7 +174,7 @@ i.hamburger-btn {
   width: 80%;
   height: 80%;
   position: absolute;
-  z-index: 999;
+  z-index: 500;
 }
 .recc__card-img {
   height: 200px;
@@ -217,7 +207,7 @@ i.hamburger-btn {
   width: 80%;
   height: 80%;
   position: absolute;
-  z-index: 999;
+  z-index: 500;
 }
 .acc__card-img1 {
   height: 330px;
@@ -254,7 +244,7 @@ i.hamburger-btn {
   width: 80%;
   height: 80%;
   position: absolute;
-  z-index: 999;
+  z-index: 500;
 }
 .fics__card-img1 {
   height: 330px;
@@ -276,9 +266,40 @@ i.hamburger-btn {
   color: var(--main-color);
 }
 /* end fiction */
+/* pop up */
+.popUp {
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgb(0, 0, 0, 0.5); */
+  position: fixed;
+  z-index: 999;
+  top: -1000px;
+  left: 0;
+  margin: auto;
+  transition: all 0.5s;
+}
+.popUp-content {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  box-shadow: var(--shadow);
+  margin: auto;
+  transition: all 0.5s;
+}
+.popUp-close {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.popHidden {
+  display: none !important;
+}
+.popUp__input:focus {
+  outline: 3px solid #ff3a5c;
+}
+/* pop up end */
 /* footer */
 .footer-wrapper {
-  padding-top: 50px;
+  /* padding-top: 50px; */
   background-color: grey;
   color: #eee;
   height: fit-content;
@@ -292,9 +313,16 @@ footer li {
   font-size: 12px;
   margin-left: -30px;
 }
+.footer__icon {
+  font-size: 1.5rem;
+}
+/* Footer end */
 /* layar tablet */
 @media only screen and (max-width: 1000px) {
   /* navbar */
+  .nav-wrapper {
+    height: fit-content;
+  }
   nav {
     flex-direction: column;
   }
@@ -341,29 +369,42 @@ footer li {
     text-align: center;
   }
   .carousel {
-    margin-top: 200px;
+    margin-top: 100px;
     height: 50vh;
   }
   .banner__img {
     height: 300px;
     object-fit: contain;
   }
+  /* Shortcut */
   .shortcut-wrapper {
-    margin-top: 200px;
+    margin-top: 100px;
   }
   .shortcut {
     width: fit-content;
+  }
+  /* popUp */
+  .popUp-content {
+    height: 100vh;
+    overflow-y: scroll;
+    text-align: center;
+  }
+  .popUp__img {
+    height: 300px;
+    object-fit: contain;
   }
 }
 
 /* layar hp */
 @media only screen and (max-width: 576px) {
-  .card {
-    margin-bottom: 20px;
+  .nav-wrapper {
+    height: 100px;
+  }
+  .card-product {
+    margin-bottom: 10px;
   }
   .navbar {
     position: unset;
-    top: 0;
   }
   .navbar,
   .fa-magnifying-glass,

@@ -32,10 +32,10 @@
                 <a href="index.html">Beranda <span class="slide-hover"></span></a>
               </li>
               <li class="navbar__form">
-                <form action="">
-                  <input type="text" id="search-bar" class="rounded-pill" placeholder="cari judul atau penulis" />
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </form>
+                <div class="input-group">
+                  <span class="input-group-text rounded-start-pill" id="inputGroup-sizing-default"><i class="fa-solid fa-magnifying-glass"></i></span>
+                  <input type="text" class="form-control rounded-end-pill" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+                </div>
               </li>
               <li class="mx-0 position-relative">
                 <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ketagori</a>
@@ -50,6 +50,14 @@
               </li>
               <li class="mx-2"><a class="btn navbar__btn rounded-pill" href="index.html">Masuk</a></li>
               <li class="mx-2"><a class="btn navbar__btn rounded-pill" href="index.html">Daftar</a></li>
+              <li class="mx-0 position-relative">
+                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-regular fa-globe"></i></a>
+                <ul class="dropdown-menu position-absolute">
+                  <li><a class="dropdown-item" href="">Indonesia</a></li>
+                  <li><a class="dropdown-item" href="">English</a></li>
+                  <li><a class="dropdown-item" href="">Русский</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </nav>
@@ -88,32 +96,32 @@
     </header>
     <!-- akhir banner -->
     <!-- shortcut -->
-    <div class="constainer width-max shortcut-wrapper row">
-      <div class="shortcut col-sm-2">
+    <div class="width-max shortcut-wrapper row">
+      <div class="shortcut col-6 col-md-2">
         <a href="#">
           <img src="public/images/baru.png" alt="buku baru" class="shortcut__img" />
           <p class="shortcut__text">Buku Baru</p>
         </a>
       </div>
-      <div class="shortcut col-sm-2">
+      <div class="shortcut col-6 col-md-2">
         <a href="#">
           <img src="public/images/science.png" alt="buku saintek" class="shortcut__img" />
           <p class="shortcut__text">Sains & Teknologi</p>
         </a>
       </div>
-      <div class="shortcut col-sm-2">
+      <div class="shortcut col-6 col-md-2">
         <a href="#">
           <img src="public/images/social.png" alt="buku soshum" class="shortcut__img" />
           <p class="shortcut__text">Sosial & Humaniora</p>
         </a>
       </div>
-      <div class="shortcut col-sm-2">
+      <div class="shortcut col-6 col-md-2">
         <a href="#">
           <img src="public/images/fiksi.png" alt="buku fiksi" class="shortcut__img" />
           <p class="shortcut__text">Fiksi</p>
         </a>
       </div>
-      <div class="shortcut col-sm-2">
+      <div class="shortcut col-6 col-sm-2">
         <a href="#">
           <img src="public/images/international.png" alt="buku luar" class="shortcut__img" />
           <p class="shortcut__text">Internasional</p>
@@ -131,9 +139,9 @@
         </p>
       </div>
       <div class="row">
-        <div class="col-sm-3">
-          <div class="card rounded p-4 recc__card">
-            <a href="#"></a>
+        <div class="col-6 col-md-3">
+          <div class="card card-product rounded p-4 recc__card">
+            <a onclick="showDetail()"></a>
             <img class="recc__card-img" src="public/images/melangkah.jpg" alt="" />
             <p class="recc__card-p">J.S. Khairen</p>
             <h6>Melangkah</h6>
@@ -141,9 +149,9 @@
             <h6 class="recc__card-price">Rp74000</h6>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="card rounded p-4 recc__card">
-            <a href="#"></a>
+        <div class="col-6 col-md-3">
+          <div class="card card-product rounded p-4 recc__card">
+            <a onclick="showDetail()"></a>
             <img class="recc__card-img" src="public/images/thinkrich.jpg" alt="" />
             <p class="recc__card-p">Napoleon Hill</p>
             <h6>Think and Grow Rich</h6>
@@ -151,9 +159,9 @@
             <h6 class="recc__card-price">Rp112000</h6>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="card rounded p-4 recc__card">
-            <a href="#"></a>
+        <div class="col-6 col-md-3">
+          <div class="card card-product rounded p-4 recc__card">
+            <a onclick="showDetail()"></a>
             <img class="recc__card-img" src="public/images/seribuWajahAyah.jpg" alt="" />
             <p class="recc__card-p">Nurun Ala</p>
             <h6>Seribu Wajah Ayah</h6>
@@ -161,9 +169,9 @@
             <h6 class="recc__card-price">Rp62000</h6>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="card rounded p-4 recc__card">
-            <a href="#"></a>
+        <div class="col-6 col-md-3">
+          <div class="card card-product rounded p-4 recc__card">
+            <a onclick="showDetail()"></a>
             <img class="recc__card-img" src="public/images/jjk5.jpg" alt="" />
             <p class="recc__card-p">Gege Akutami</p>
             <h6>Jujutsu Kaisen 05</h6>
@@ -183,14 +191,14 @@
         </p>
       </div>
       <div class="row">
-        <div class="col-sm-3">
-          <div class="card rounded p-4 acc__card">
+        <div class="col-md-3">
+          <div class="card card-product rounded p-4 acc__card">
             <img class="acc__card-img1" src="public/images/math.png" alt="" />
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="card rounded p-4 acc__card">
-            <a href="#"></a>
+        <div class="col-6 col-md-3">
+          <div class="card card-product rounded p-4 acc__card">
+            <a onclick="showDetail()"></a>
             <img class="acc__card-img" src="public/images/calculus.jpg" alt="" />
             <p class="acc__card-p">Morris Kline</p>
             <h6>Calculus: An Intuitive and Physical Approach (Second Edition)</h6>
@@ -198,9 +206,9 @@
             <h6 class="acc__card-price">Rp112000</h6>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="card rounded p-4 acc__card">
-            <a href="#"></a>
+        <div class="col-6 col-md-3">
+          <div class="card card-product rounded p-4 acc__card">
+            <a onclick="showDetail()"></a>
             <img class="acc__card-img" src="public/images/fisika.jpg" alt="" />
             <p class="acc__card-p">Halliday & Resnick</p>
             <h6>Fundamentals of Physics, Extended</h6>
@@ -208,9 +216,9 @@
             <h6 class="acc__card-price">Rp120000</h6>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="card rounded p-4 acc__card">
-            <a href="#"></a>
+        <div class="col-6 col-md-3">
+          <div class="card card-product rounded p-4 acc__card">
+            <a onclick="showDetail()"></a>
             <img class="acc__card-img" src="public/images/biologi.jpg" alt="" />
             <p class="acc__card-p">Urry, Cain Wasserman, dkk</p>
             <h6>Campbell Biology</h6>
@@ -230,14 +238,14 @@
         </p>
       </div>
       <div class="row">
-        <div class="col-sm-3">
-          <div class="card rounded p-4 fics__card">
+        <div class="col-md-3">
+          <div class="card card-product rounded p-4 fics__card">
             <img class="fics__card-img1" src="public/images/dream.png" alt="" />
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="card rounded p-4 fics__card">
-            <a href="#"></a>
+        <div class="col-6 col-md-3">
+          <div class="card card-product rounded p-4 fics__card">
+            <a onclick="showDetail()"></a>
             <img class="fics__card-img" src="public/images/manyar.jpg" alt="" />
             <p class="fics__card-p">Y.B. Mangunwijaya</p>
             <h6>Burung-burung Manyar (1981)</h6>
@@ -245,9 +253,9 @@
             <h6 class="fics__card-price">Rp112000</h6>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="card rounded p-4 fics__card">
-            <a href="#"></a>
+        <div class="col-6 col-md-3">
+          <div class="card card-product rounded p-4 fics__card">
+            <a onclick="showDetail()"></a>
             <img class="fics__card-img" src="public/images/pushkin.jpg" alt="" />
             <p class="fics__card-p">A. Pushkin</p>
             <h6>Alexander Pushkin Short Stories (1831)</h6>
@@ -255,9 +263,9 @@
             <h6 class="fics__card-price">Rp150000</h6>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="card rounded p-4 fics__card">
-            <a href="#"></a>
+        <div class="col-6 col-md-3">
+          <div class="card card-product rounded p-4 fics__card">
+            <a onclick="showDetail()"></a>
             <img class="fics__card-img" src="public/images/sagaras.jpg" alt="" />
             <p class="fics__card-p">Tere Liye</p>
             <h6>Sagaras</h6>
@@ -268,12 +276,58 @@
     </div>
     <!-- akhir fiksi pilihan -->
     <!-- akhir best selling -->
-
+    <div class="popUp" id="popUp">
+      <div class="mb-3 popUp-content p-2 rounded" id="popUp">
+        <p class="fw-bold position-absolute end-0 pe-3 popUp-close" id="popUpClose" onclick="closeDetail()">&#9747;</p>
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img class="popUp__img" src="public/images/sagaras.jpg" class="img-fluid rounded-start p-2" width="300" />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="card-text"><small class="text-body-secondary">Tere Liye</small></p>
+              <h3 class="card-title">Saragas</h3>
+              <hr />
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vero suscipit, repudiandae officia quas saepe voluptatem nisi alias natus ut.</p>
+              <h5>Detail</h5>
+              <hr />
+              <div class="row">
+                <div class="col-6">
+                  Jumlah halaman <br />
+                  <p class="text-secondary">120</p>
+                </div>
+                <div class="col-6">
+                  Tahun Terbit <br />
+                  <p class="text-secondary">2018</p>
+                </div>
+                <div class="col-6">
+                  Penerbit <br />
+                  <p class="text-secondary">Sabakgrip</p>
+                </div>
+                <div class="col-6">
+                  Bahasa <br />
+                  <p class="text-secondary">Indonesia</p>
+                </div>
+              </div>
+              <h5>Mau Beli Berapa?</h5>
+              <hr />
+              <div class="input-group">
+                <form class="m-auto m-md-0" action="">
+                  <input class="popUp__input" type="number" min="1" /> <br />
+                  <button class="btn btn-primary mt-3">Tambah ke Keranjang</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- footer -->
+    <p class="incarBuku text-center">Gak ada buku incaranmu? Yuk, <a href="#">lihat koleksi kami</a> atau <a href="#">tanya langsung</a> juga boleh</p>
     <div class="container">
       <hr />
     </div>
-    <div class="footer-wrapper m-0">
+    <div class="footer-wrapper p-5 m-0">
       <footer class="container width-max row m-auto">
         <div class="footer__jargon col-sm-3">
           <h4 class="fw-bold">Kedai Buku <span class="font-pink">Gajah</span><br />Kedai Buku Serba Ada</h4>
@@ -301,8 +355,16 @@
           <a href="#"><img src="public/images/appStore.png" alt="appStore" width="100" /></a>
         </div>
       </footer>
-      <div class="credit">
-        <p class="copyright text-center">&copy; 2023 senimentari Group</p>
+      <hr />
+      <div class="container d-flex justify-content-around">
+        <div class="sosmed">
+          <a href="#" class="me-3"><i class="footer__icon fa-brands fa-instagram"></i></a>
+          <a href="#" class="me-3"><i class="footer__icon fa-brands fa-facebook"></i></a>
+          <a href="#" class="me-3"><i class="footer__icon fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="credit">
+          <p class="copyright text-center">&copy; 2023 senimentari Group</p>
+        </div>
       </div>
     </div>
     <!-- akhir footer -->
