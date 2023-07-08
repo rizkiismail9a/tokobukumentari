@@ -11,5 +11,5 @@ const showDetail = () => {
 };
 
 const closeDetail = () => {
-  document.querySelector(".popUp").style.top = "-1000px";
+  document.querySelector(".popUp").style.top = "-2000px";
 };
