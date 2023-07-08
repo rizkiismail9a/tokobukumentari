@@ -1,0 +1,63 @@
+:root {
+  --main-color: #ff3a5c;
+  --shadow: 2px 3px 8px rgb(212, 212, 212);
+  --shadow-hover: 2px 3px 8px rgb(255, 255, 255);
+}
+.font-pink {
+  color: var(--main-color);
+}
+.form-control:focus {
+  border-color: unset;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond", serif;
+}
+body {
+  background-color: #eee;
+}
+.width-max {
+  max-width: 1080px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input:focus {
+  outline: 3px solid var(--main-color) !important;
+}
+i {
+  color: var(--main-color);
+}
+/* navbar */
+.navbar__img {
+  width: 30%;
+  object-fit: contain;
+}
+/* navbar end */
+/* main */
+.main__illustration img {
+  height: 400px;
+  object-fit: contain;
+}
+.card {
+  width: 400px;
+}
+.regWithGoogle {
+  height: 35px;
+  font-size: 1.5rem;
+}
+.choices p {
+  margin-bottom: -10px;
+  background-color: white;
+  width: 40px;
+}
+/* main end */
+@media screen and(max-width: 1000px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+}

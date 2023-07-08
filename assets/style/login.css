@@ -27,7 +27,7 @@ main {
 }
 .form-container {
   position: relative;
-  background-image: url(../assets/images/login.png);
+  background-image: url("../images/login.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
