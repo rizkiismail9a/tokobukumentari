@@ -71,10 +71,6 @@ nav {
 nav li a {
   color: black;
 }
-.navbar__logo {
-  width: 25%;
-  object-fit: contain;
-}
 .navbar__btn {
   background-color: lightgray;
   color: white;
@@ -84,17 +80,11 @@ nav li a {
   background-color: var(--main-color);
   color: white;
 }
-.navbar__list {
-  width: 75%;
-}
 .navbar__list ul {
   margin-top: 28px;
   margin-bottom: 16px;
 }
-.navbar__form {
-  width: 50%;
-  /* position: relative; */
-}
+
 .dropdown-menu {
   top: 36px;
 }
@@ -112,13 +102,10 @@ i.hamburger-btn {
   gap: 30px;
 }
 .banner__jargon {
-  width: 50%;
   align-self: center;
-  text-align: right;
 }
 .banner__img {
   height: 400px;
-  object-fit: contain;
 }
 .carousel-prev {
   font-size: 2rem;
@@ -127,13 +114,10 @@ i.hamburger-btn {
 /* carousel end */
 /* Shortcut */
 .shortcut-wrapper {
-  margin: 0 auto;
   gap: 10px;
 }
 .shortcut {
-  margin: auto;
   background: linear-gradient(white, rgb(255, 222, 222), var(--main-color));
-  text-align: center;
   padding-top: 15px;
   border-radius: 20px;
   box-shadow: var(--shadow);
@@ -155,7 +139,6 @@ i.hamburger-btn {
 }
 .shortcut__img {
   height: 100px;
-  object-fit: contain;
   border-radius: 20px;
 }
 .shortcut__text {
@@ -168,7 +151,6 @@ i.hamburger-btn {
 }
 .recc__card {
   box-shadow: var(--shadow);
-  text-align: center;
   height: fit-content;
 }
 .recc__card a {
@@ -176,12 +158,10 @@ i.hamburger-btn {
   cursor: pointer;
   width: 80%;
   height: 80%;
-  position: absolute;
   z-index: 100;
 }
 .recc__card-img {
   height: 200px;
-  object-fit: contain;
 }
 .recc__card-p {
   color: grey;
@@ -206,7 +186,7 @@ i.hamburger-btn {
 }
 .acc__card {
   box-shadow: var(--shadow);
-  text-align: center;
+
   height: fit-content;
 }
 .acc__card a {
@@ -214,7 +194,6 @@ i.hamburger-btn {
   cursor: pointer;
   width: 80%;
   height: 80%;
-  position: absolute;
   z-index: 100;
 }
 .acc__card-img1 {
@@ -223,7 +202,6 @@ i.hamburger-btn {
 }
 .acc__card-img {
   height: 200px;
-  object-fit: contain;
 }
 .acc__card-p {
   color: grey;
@@ -243,7 +221,6 @@ i.hamburger-btn {
 }
 .fics__card {
   box-shadow: var(--shadow);
-  text-align: center;
   height: fit-content;
 }
 .fics__card a {
@@ -251,16 +228,13 @@ i.hamburger-btn {
   cursor: pointer;
   width: 80%;
   height: 80%;
-  position: absolute;
   z-index: 100;
 }
 .fics__card-img1 {
   height: 330px;
-  object-fit: contain;
 }
 .fics__card-img {
   height: 200px;
-  object-fit: contain;
 }
 .fics__card-p {
   color: grey;
@@ -307,7 +281,6 @@ i.hamburger-btn {
 /* pop up end */
 /* footer */
 .footer-wrapper {
-  /* padding-top: 50px; */
   background-color: grey;
   color: #eee;
   height: fit-content;
@@ -482,5 +455,8 @@ footer li {
   }
   footer .col-sm-3 {
     margin-bottom: 20px;
+  }
+  .shortcut-wrapper {
+    margin-top: 86px;
   }
 }
