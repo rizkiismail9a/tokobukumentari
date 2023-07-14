@@ -1,0 +1,2 @@
+.vscode/setting.json
+git rm --cached .vscode
