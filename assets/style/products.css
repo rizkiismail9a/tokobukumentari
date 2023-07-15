@@ -7,9 +7,7 @@
 .font-pink {
   color: var(--main-color);
 }
-.form-control:focus {
-  border-color: unset;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,28 +24,16 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-input:focus {
-  outline: 3px solid var(--main-color) !important;
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: transparent;
+  outline: 3px solid var(--main-color);
 }
 i {
   color: var(--main-color);
 }
-.see-all a {
-  color: var(--main-color);
-}
-.see-all {
-  display: inline-block;
-}
-.see-all__slider {
-  display: block;
-  width: 0;
-  height: 3px;
-  background-color: var(--main-color);
-  transition: all 0.2s;
-}
-.see-all:hover .see-all__slider {
-  width: 100%;
-}
+
 .btn-outline-success {
   --bs-btn-color: var(--main-color);
   --bs-btn-border-color: var(--main-color);
@@ -86,7 +72,10 @@ i {
   z-index: 700;
   background-color: #eee;
 }
-
+.navbar__logo,
+.navbar__list {
+  background-color: #eee;
+}
 .dropdown-menu {
   top: 36px;
 }

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta
       name="description"
       content="Author: Yuri Ostrovsky,
-      Illustrator: Yuri Ostrovsky, Category: E-Commerse"
+            Illustrator: Yuri Ostrovsky, Category: E-Commerse"
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/style/detail.css" />
+    <link rel="stylesheet" href="assets/style/profile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet" />
@@ -21,9 +21,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="shortcut icon" href="assets/images/bg.png" type="image/x-icon" />
-    <title>Detail - Toko Buku Mentari</title>
+    <title>Profil User - Toko Buku Mentari</title>
   </head>
   <body>
+    <!-- navbar -->
     <!-- navbar -->
     <div class="container width-max nav-wrapper m-auto position-sticky p-0">
       <div class="navbar p-0">
@@ -71,85 +72,49 @@
       </div>
     </div>
     <!-- navbar end -->
-    <!-- main content -->
-    <main class="container width-max my-5 m-auto p-3">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="row g-2">
-            <div class="col-6 h-100">
-              <img src="assets/images/sirkuspohon.jpg" class="w-100 h-100 object-fit-cover" alt="sirkuspohon" />
-            </div>
-            <div class="col-6 h-100">
-              <div class="row g-2">
-                <div class="col-6">
-                  <img src="assets/images/Sirkus-Pohon-Belakang-600x890.jpg" alt="sirkuspohon" class="w-100 h-100 object-fit-contain" />
-                </div>
-                <div class="col-6">
-                  <img src="assets/images/badut.jpg" alt="sirkuspohon" class="w-100 h-100 object-fit-cover" />
-                </div>
-                <div class="col-6">
-                  <img src="assets/images/daftarisi.jpg" alt="sirkuspohon" class="w-100 object-fit-contain" />
-                </div>
-                <div class="col-6">
-                  <img src="assets/images/sirkuspohon.jpg" alt="sirkuspohon" class="w-100 h-100 object-fit-cover" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col p-0">
-          <div class="p-3 card m-auto">
-            <div class="price">
-              <h2>Rp98000</h2>
-              <small class="text-body-secondary">Andrea Hirata</small>
-              <h1 class="fs-5">Sirkus Pohon</h1>
-              <div class="d-flex justify-content-between w-75 text-body-secondary align-items-center">
-                <p class="m-0">Baru</p>
-                <i class="fa-solid fa-circle text-body-secondary" style="font-size: 0.5rem"></i>
-                <p class="m-0">340gr</p>
-                <i class="fa-solid fa-circle text-body-secondary" style="font-size: 0.5rem"></i>
-                <p class="m-0">Cianjur</p>
-              </div>
-            </div>
-            <hr />
-            <div class="item_desc h-100">
-              <p>Deksripsi</p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, minima.</p>
-              <table class="w-100">
-                <tbody>
-                  <tr>
-                    <td class="fw-bold">Ketagori</td>
-                    <td>Novel</td>
-                  </tr>
-                  <tr>
-                    <td class="fw-bold">Penulis</td>
-                    <td>Andrea Hirata</td>
-                  </tr>
-                  <tr>
-                    <td class="fw-bold">Penerbit</td>
-                    <td>Bentang Pustaka</td>
-                  </tr>
-                  <tr>
-                    <td class="fw-bold">Tahun Terbit</td>
-                    <td>2017</td>
-                  </tr>
-                  <tr>
-                    <td class="fw-bold">Jumlah Halaman</td>
-                    <td>765 halaman</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <hr />
-            <div class="btn-container d-flex flex-column gap-2">
-              <a class="btn btn-success" href="#">Beli Sekarang</a>
-              <a class="btn btn-outline-success" href="#">Masuk Keranjang</a>
-            </div>
-          </div>
+    <!-- main -->
+    <div class="row container g-3 justify-content-around my-5 mx-auto width-max">
+      <div class="col-sm-6">
+        <div class="list-group position-sticky rounded" style="top: 100px">
+          <h3>Setting</h3>
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true"> Detail Profil </a>
+          <a href="#" class="list-group-item list-group-item-action">Ubah kata sandi</a>
+          <a href="#" class="list-group-item list-group-item-action">Riwayat transaksi</a>
         </div>
       </div>
-    </main>
-    <!-- main content end -->
+      <div class="col-sm-6">
+        <div class="card p-3">
+          <h1 class="fs-6 text-secondary">Edit Profile</h1>
+          <img src="assets/images/profile-photo.png" alt="" class="rounded-circle border" width="150px" />
+          <div class="mt-4 d-flex gap-2">
+            <label for="formFile" class="form-label"></label>
+            <input class="form-control" type="file" id="formFile" />
+            <i class="fa-solid fa-trash btn btn-outline-success d-block fs-5" style="height: 36px"></i>
+          </div>
+
+          <hr />
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="name" aria-describedby="namelHelp" value="Laksmi Mentari" />
+            </div>
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" name="username" aria-describedby="namelHelp" value="mentari1945" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="email" name="email" aria-describedby="namelHelp" value="laksmimentari@gmail.com" />
+            </div>
+            <div class="d-flex flex-row-reverse mt-5">
+              <button type="submit" class="btn btn-success">Simpan</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- main end -->
     <!-- footer -->
     <div class="container">
       <hr />

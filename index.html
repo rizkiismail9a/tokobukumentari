@@ -25,12 +25,16 @@
   </head>
   <body>
     <!-- navbar -->
-    <div class="container width-max nav-wrapper m-auto position-sticky">
-      <div class="navbar">
-        <nav class="d-flex flex-column flex-md-row justify-content-evenly">
-          <img src="assets/images/logo.png" class="navbar__logo object-fit-contain w-25 m-auto" />
-          <i class="fa-solid fa-bars hamburger-btn fs-1 d-sm-none m-auto font-pink" id="hamburger-btn"></i>
-          <div class="navbar__list w-sm-75">
+    <!-- navbar -->
+    <div class="container width-max nav-wrapper m-auto position-sticky p-0">
+      <div class="navbar p-0">
+        <nav class="d-flex flex-column flex-md-row justify-content-between w-100">
+          <div class="m-0 d-flex flex-column" style="background-color: #eee">
+            <img src="assets/images/logo.png" class="navbar__logo object-fit-contain w-75 m-auto" />
+            <!-- hamburger button -->
+            <i class="fa-solid fa-bars hamburger-btn fs-1 d-sm-none m-auto font-pink m-0" id="hamburger-btn"></i>
+          </div>
+          <div class="navbar__list w-100 w-sm-75">
             <ul class="d-flex flex-column flex-md-row justify-content-around align-items-center h-100 p-0" type="none">
               <li class="mx-sm-2 m-auto p-0 navbar__list-li1">
                 <a href="index.html"><i class="fa-solid fa-house font-pink"></i><span class="slide-hover"></span></a>
@@ -69,8 +73,8 @@
     </div>
     <!-- navbar end -->
     <!-- banner -->
-    <header class="position-sticky">
-      <div id="carouselExample" class="carousel slide">
+    <header>
+      <div id="carouselExample" class="carousel slide mb-0">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container banner d-flex w-100">

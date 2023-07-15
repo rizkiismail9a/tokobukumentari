@@ -25,44 +25,13 @@
   </head>
   <body>
     <!-- navbar -->
-    <div class="container width-max nav-wrapper m-auto position-sticky top-0">
-      <div class="navbar">
-        <nav class="d-flex flex-column flex-md-row justify-content-evenly">
-          <img src="assets/images/logo.png" class="navbar__logo object-fit-contain w-25 m-auto" />
-          <i class="fa-solid fa-bars hamburger-btn fs-1 d-sm-none m-auto font-pink" id="hamburger-btn"></i>
-          <div class="navbar__list w-sm-75">
-            <ul class="d-flex flex-column flex-md-row justify-content-around align-items-center h-100 p-0" type="none">
-              <li class="mx-sm-2 m-auto p-0 navbar__list-li1">
-                <a href="index.html"><i class="fa-solid fa-house font-pink"></i><span class="slide-hover"></span></a>
-              </li>
-              <li class="mx-sm-2 m-auto p-0 navbar__form w-50">
-                <div class="input-group">
-                  <span class="input-group-text rounded-start-pill" id="inputGroup-sizing-default"><i class="fa-solid fa-magnifying-glass"></i></span>
-                  <input type="text" class="form-control rounded-end-pill" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
-                </div>
-              </li>
-              <li class="mx-sm-2 m-auto p-0 position-relative">
-                <a class="dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ketagori</a>
-                <ul class="dropdown-menu position-absolute">
-                  <li><a class="dropdown-item" href="#">Sejarah</a></li>
-                  <li><a class="dropdown-item" href="#">Fiksi</a></li>
-                  <li><a class="dropdown-item" href="#">Agama</a></li>
-                  <li><a class="dropdown-item" href="#">Majalah</a></li>
-                  <li><a class="dropdown-item" href="#">Klasik</a></li>
-                  <li><a class="dropdown-item" href="#">Akademik</a></li>
-                </ul>
-              </li>
-              <li class="mx-sm-2 m-auto p-0"><a class="btn btn-outline-success navbar__btn rounded-pill" href="login.html">Masuk</a></li>
-              <li class="mx-sm-2 m-auto p-0"><a class="btn btn-success navbar__btn rounded-pill" href="register.html">Daftar</a></li>
-              <li class="mx-sm-2 m-auto p-0 position-relative">
-                <a class="dropdown-toggle font-pink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-globe"></i></a>
-                <ul class="dropdown-menu position-absolute top-4">
-                  <li><a class="dropdown-item" href="">Indonesia</a></li>
-                  <li><a class="dropdown-item" href="">English</a></li>
-                  <li><a class="dropdown-item" href="">Русский</a></li>
-                </ul>
-              </li>
-            </ul>
+    <div class="container width-max nav-wrapper m-auto position-sticky p-0">
+      <div class="navbar p-0">
+        <nav class="d-flex flex-column flex-md-row m-auto">
+          <!-- logo -->
+          <div class="m-0 d-flex flex-column" style="background-color: #eee">
+            <img src="assets/images/logo.png" class="navbar__logo object-fit-contain w-50 m-auto" />
+            <!-- hamburger button -->
           </div>
         </nav>
       </div>
@@ -72,7 +41,7 @@
     <div class="row container g-0 width-max justify-content-between m-auto my-5">
       <div class="col-md-6">
         <img src="assets/images/daftar.png" alt="" class="w-100" />
-        <div class="ps-md-5 reg__jargon text-start">
+        <div class="p-5 reg__jargon text-start">
           <h2 class="fs-4">Tak Kenal, Maka Tak Sayang</h2>
           <h1 class="fs-4">Yuk, kenalan. Biar <span class="font-pink">Mentari</span> bisa jagain belanjaan kamu</h1>
         </div>
@@ -80,7 +49,7 @@
       <div class="col-md-6">
         <div class="col-md-6 card p-3 m-auto my-3" style="width: 24rem">
           <h1 class="fs-3">Daftar</h1>
-          <p class="m-0">Udah punya akun? <a href="register.html">Masuk aja</a></p>
+          <p class="m-0">Udah punya akun? <a href="login.html">Masuk aja</a></p>
           <hr />
           <form>
             <div class="mb-3">
@@ -108,10 +77,9 @@
               <i class="fa-solid fa-eye position-absolute" style="right: 15px; top: 42px"></i>
             </div>
             <div class="mb-3 position-relative">
-              <input type="checkbox" class="pe-5" id="agreement" placeholder="Konfirmasi kata sandi" />
               <label for="agreement" class="form-label"
-                >Dengan menekan daftar, saya dengan sadar menyetujui dan memahami segala <a href="#">syarat dan ketentuan</a> dan telah membaca <a href="#">kebijakan privasi</a> yang ditetapkan oleh Senimentari Group
-                <span class="font-pink">*</span></label
+                ><input type="checkbox" class="pe-5" id="agreement" placeholder="Konfirmasi kata sandi" />Dengan menekan daftar, saya dengan sadar menyetujui dan memahami segala <a href="#">syarat dan ketentuan</a> dan telah membaca
+                <a href="#">kebijakan privasi</a> yang ditetapkan oleh Senimentari Group <span class="font-pink">*</span></label
               >
             </div>
             <button type="submit" class="btn btn-success w-100 mt-4">Daftar</button>
