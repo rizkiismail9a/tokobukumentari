@@ -85,6 +85,7 @@ i {
 .nav-wrapper {
   top: 0;
   z-index: 700;
+  background-color: #eee;
 }
 
 .dropdown-menu {
