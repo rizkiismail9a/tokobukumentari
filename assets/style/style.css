@@ -301,10 +301,6 @@ footer li {
 /* Footer end */
 /* layar tablet */
 @media only screen and (max-width: 1024px) {
-  /* navbar */
-  .nav-wrapper {
-    height: fit-content;
-  }
   .navbar,
   .fa-magnifying-glass,
   .dropdown-menu {
@@ -376,16 +372,10 @@ footer li {
   .card-product {
     margin-bottom: 10px;
   }
-  .navbar {
-    position: unset;
-  }
   .navbar,
   .fa-magnifying-glass,
   .dropdown-menu {
     font-size: 1rem;
-  }
-  nav {
-    flex-direction: column;
   }
   .navbar__logo {
     width: 100% !important;
