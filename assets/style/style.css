@@ -83,39 +83,13 @@ i {
 }
 /* navbar */
 .nav-wrapper {
-  width: 100%;
-  position: sticky;
+  top: 0;
+  z-index: 700;
   background-color: #eee;
-  height: 100px;
-  top: 0;
-  z-index: 500;
-}
-.navbar {
-  width: 100%;
-  top: 0;
-  left: 44px;
-  right: 44px;
-  margin: 0 auto;
-  z-index: 900;
-}
-nav {
-  width: 100%;
-}
-nav li a {
-  color: black;
-}
-
-.navbar__list ul {
-  margin-top: 28px;
-  margin-bottom: 16px;
 }
 
 .dropdown-menu {
   top: 36px;
-}
-
-i.hamburger-btn {
-  display: none;
 }
 /* navbar end */
 /* carousel */
@@ -382,10 +356,7 @@ footer li {
     height: 300px;
     object-fit: contain;
   }
-  /* Shortcut */
-  .shortcut-wrapper {
-    margin-top: 100px;
-  }
+
   .shortcut {
     width: fit-content;
   }
@@ -421,10 +392,7 @@ footer li {
     flex-direction: column;
   }
   .navbar__logo {
-    width: 100vw;
-    background-color: #eee;
-    position: relative;
-    z-index: 999;
+    width: 100% !important;
   }
   .navbar__form {
     width: 90%;
